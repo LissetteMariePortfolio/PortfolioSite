@@ -1,0 +1,187 @@
+/***** STARTER CODE - DO NOT CHANGE *****/
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+}
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #77dd77;
+  color: white;
+}
+nav > ul > li {
+  display: inline;
+  margin: 20px;
+}
+nav > ul > li > a {
+  display: inline-block;
+}
+a{
+  color:white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#selected{
+  font-weight: bolder;
+  border: 2px solid black;
+}
+.procon{
+  margin:30px;
+  font-weight: 800;
+  font-size: 20px;
+  list-style-type: none;
+}
+.conclusion{
+  background-color: rgb(86, 84, 233);
+  height: 400px;
+  
+}
+.conclusion p{
+  margin-left:100px;
+  margin-right: 100px;
+  margin-top: 30px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+p, a{
+  font-weight: 800;
+}
+.example_paths p{
+  margin-left:100px;
+  margin-right: 100px;
+  margin-top: 30px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.conclusion a{
+  margin-left:100px; 
+  font-size: 20px;
+  
+}
+nav>ul {
+  
+  background: #78d0f0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.cards {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  margin: 0 auto;
+  grid-gap: 1rem;
+}
+.card {
+  border: 2px solid #e7e7e7;
+  border-radius: 4px;
+  padding: 0.5rem;
+  grid-column: auto;
+  grid-row: auto;
+}
+.card__image {
+  height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 80%;
+}
+.card_content p{
+  margin-bottom: 20px;
+}
+h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+.card_content p {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.parent_2{
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.parent_2 h2{
+  display: block;
+}
+
+.pm_info h2{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.pm_img{
+ 
+  height: auto;
+  background-image:url(images/melanie_lei.jpg);
+  background-size: 100%;
+  float: right;
+
+  width: 50%;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding-top: 30px;
+  text-align: center;
+}
+.parent{
+  display: flex;
+}
+ h2{
+font-weight: bolder;
+
+}
+.pro{
+
+  height: 1200px;
+  background-color: rgb(20, 153, 241);
+  width: 50%;
+}
+.con{
+  display: flex;
+  height: 1200px;
+  background-color: rgb(211, 64, 89);
+  width: 50%;
+}
+
+#main {
+  background-attachment: fixed; /* Parallax effect */
+  background-position: center; /* Parallax effect */
+  background-size: cover; /* Parallax effect */
+  color: rgba(168, 154, 154, 0.5);
+  height: 400px; /* Parallax effect */
+}
+
+@media screen and (min-width: 800px) {
+}
+
+/** Code for prefers reduced motion **/
+/* Make no changes below this line.
+   *************************************** 
+   */
+@media screen and (prefers-reduced-motion: reduce) {
+  /*Turn off scroll*/
+  html {
+    scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  /*Turn off transition*/
+
+  /*Turn off parallax*/
+  header {
+    background-attachment: initial;
+  }
+}
